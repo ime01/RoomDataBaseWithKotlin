@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RoomDataBase with Kotlin</string>
+    <string name="display">display values from room database</string>
+</resources>
