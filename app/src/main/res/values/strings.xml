@@ -1,4 +1,17 @@
 <resources>
-    <string name="app_name">RoomDataBase with Kotlin</string>
+    <string name="app_name">RoomDataBase with Kotlin + Mvvm Basic Example</string>
     <string name="display">display values from room database</string>
+
+    <string name="gdg_description_long">GDGs are local groups of developers who are specifically interested in Google
+        products and APIs. Each local group is called a GDG chapter and can host a variety of technical activities for
+        developers - from just a few people getting together to watch our latest videos, to large gatherings with demos
+        and tech talks, to hackathons. Google Developers supports and recognizes GDG chapters, but doesn’t own or manage
+        them.
+    </string>
+    <string name="about_google_developer_groups">About Google Developer Groups</string>
+    <string name="gdg_description_bullets">️Run by passionate individuals in local developer communities\n
+        ️A group to share ideas and network with fellow developers \n
+        ️A place to learn about Google technologies and development tools \n
+        Open to and free for all interested
+    </string>
 </resources>

@@ -1,11 +1,14 @@
 package com.flowz.roomdatabasewithkotlin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.room.Room
+import com.flowz.roomdatabasewithkotlin.mvvm_example.ui.quotes.QuotesActivity
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_quotes.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,6 +17,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val db = Room.databaseBuilder(applicationContext, AppDB::class.java, "EmployeeDB").allowMainThreadQueries().build()
+
+        open_mvvm.setOnClickListener {
+         val  openMvvmActivity = Intent(this, QuotesActivity::class.java)
+            startActivity(openMvvmActivity)
+        }
 
         save_values.setOnClickListener {
 
@@ -33,11 +41,17 @@ class MainActivity : AppCompatActivity() {
                     emp.emp_id = enteredId
 
                 db.empDAO().saveEmp(emp)
-//
-//
+
             }.start()
 
-            Toast.makeText(this, "Values Saved", Toast.LENGTH_LONG).show()
+            Snackbar.make(enter_post, "Values Saved", Snackbar.LENGTH_LONG).show()
+
+
+//            Toast.makeText(this, "Values Saved", Toast.LENGTH_LONG).show()
+            enter_name.setText("")
+            enter_post.setText("")
+            enter_id.setText("")
+
 
         }
 
@@ -85,7 +99,7 @@ class MainActivity : AppCompatActivity() {
 ////
 //        output.setText(showValues)
 //    }
-
+//
 //    private fun saveTheValues() {
 //
 //        val enteredName = enter_name.text.toString()
