@@ -1390,6 +1390,7 @@ id bottom
 id bounce
 id buttonPanel
 id button_add
+id button_start
 id center
 id center_horizontal
 id center_vertical
@@ -1504,6 +1505,7 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id open_coroutine_example
 id open_mvvm
 id outline
 id output
@@ -1557,6 +1559,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id show_coroutine_result
 id sin
 id slide
 id smallLabel
@@ -1685,6 +1688,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_example_coroutine
 layout activity_main
 layout activity_quotes
 layout acvtivity_main_motion_scene_end

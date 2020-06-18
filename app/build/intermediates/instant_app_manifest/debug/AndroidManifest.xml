@@ -19,6 +19,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.flowz.roomdatabasewithkotlin.mvvm_example.coroutinesexample.ExampleCoroutine" />
         <activity android:name="com.flowz.roomdatabasewithkotlin.mvvm_example.ui.quotes.QuotesActivity" />
         <activity android:name="com.flowz.roomdatabasewithkotlin.MainActivity" >
             <intent-filter>

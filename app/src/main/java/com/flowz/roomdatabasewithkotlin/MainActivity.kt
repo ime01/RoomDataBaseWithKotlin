@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.room.Room
+import com.flowz.roomdatabasewithkotlin.mvvm_example.coroutinesexample.ExampleCoroutine
 import com.flowz.roomdatabasewithkotlin.mvvm_example.ui.quotes.QuotesActivity
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
@@ -21,6 +22,11 @@ class MainActivity : AppCompatActivity() {
         open_mvvm.setOnClickListener {
          val  openMvvmActivity = Intent(this, QuotesActivity::class.java)
             startActivity(openMvvmActivity)
+        }
+
+        open_coroutine_example.setOnClickListener {
+            val  coroutineExample = Intent(this, ExampleCoroutine::class.java)
+            startActivity(coroutineExample)
         }
 
         save_values.setOnClickListener {
